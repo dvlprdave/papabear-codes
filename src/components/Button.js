@@ -10,6 +10,7 @@ const Button = styled.button`
   color: ${props => props.theme.colors.white};
   padding: ${props => (props.big ? '0.5rem 1.75rem' : '0.35rem 1.65rem')};
   margin-right: 1rem;
+  // margin-bottom: 1rem;
   transition: all ${props => props.theme.transitions.normal};
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   &:hover {
@@ -25,6 +26,10 @@ const Button = styled.button`
     height: 20px;
     margin-right: 0.75rem;
     fill: ${props => props.theme.colors.white};
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.phone}) {
+    margin-bottom: 1rem;
   }
 `
 
