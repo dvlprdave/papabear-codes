@@ -1,0 +1,79 @@
+---
+date: "2018-05-29"
+title: "Styled Components"
+categories:
+  - JavaScript
+
+---
+
+CSS in JavaScript doesn't hold an amazing reception, yet here we are, doing exactly that. There's good 
+reason for it though and now we're doing it in style. (silence fills the room as a tear is shed for my 
+horrible attempt at a funny)
+
+Let's take a quick surface look at styled components while using this header component as an example:
+
+```javascript
+const Header = styled.div`
+    display: flex;
+    background: #fff;
+    color: #000;
+    height: 10rem;
+    padding: 0.5rem;
+`
+```
+
+If you've never seen a styled component before, you are either confused or curious. Either way, 
+you should at least be familiar with the basic CSS shown. Let's break this down and figure out 
+whats in front of us. 
+
+### Under The Hood
+
+A variable is created with the name of Header. It's value is just a function wearing a disguise. 
+We write styled.div, as our component is simply a div. However, this could be an anchor, heading, 
+or even a button if you'd like (styled.button). We then include a set 
+of backticks which is where you'd begin to write regular CSS.
+
+> Remember, this is still JSX so any component you define must start with a capital letter. Lowercase
+ component names are used for built-in components.
+
+ ### Piecing it together
+
+The example above won't get you anywhere unless you have styled components added as a dependency and 
+imported. To do so, open your terminal and run:
+
+ ```
+ npm install --save styled-components
+ ```
+ Once it's installed, head over to your component file and import styled components by adding the following:
+
+```javascript
+import styled from 'styled-components';
+```
+
+Now that we have that in place, you can use your new styled component. 
+
+```javascript
+import React from "react"
+import styled from 'styled-components'
+
+const Header = styled.div`
+    display: flex;
+    background: #fff;
+    color: #000;
+    height: 10rem;
+    padding: 0.5rem;
+`
+const App = () => (
+    <div>
+        <Header /> 
+    </div>
+)
+
+export default App
+```
+
+### Want to know more? 
+
+This was simply a quick example and intro into styled components. 
+If you'd like to learn more and dive deeper, head over to the 
+[styled components docs](https://www.styled-components.com/docs).
