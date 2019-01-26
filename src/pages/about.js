@@ -42,7 +42,7 @@ const About = () => (
                 </p>
 
                 <p>
-                    My goal is to provide a place where I can share a pieces of what I've learned
+                    My goal is to provide a place where I can share pieces of what I've learned
                     and spread it to all.
                 </p>
 
