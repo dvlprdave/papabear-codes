@@ -14,7 +14,7 @@ module.exports = {
   siteLogo: '/social/logo.png', // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@minimal', // Twitter Username - Optional
+  userTwitter: '@papabearcodes', // Twitter Username - Optional
   ogSiteName: 'minimal', // Facebook Site Name - Optional
   ogLanguage: 'en_US', // Facebook Language
 
