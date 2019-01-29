@@ -9,8 +9,8 @@ module.exports = {
   siteHeadline: 'Writing and publishing content', // Headline for schema.org JSONLD
   siteBanner: '/social/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
   favicon: 'src/bear.svg', // Your image for favicons. You can find it in the /src folder
-  siteDescription: 'Minimal Blog with a focus on typography. Gatsby Starter powered by MDX.', // Your site description
-  author: 'LekoArts', // Author for schemaORGJSONLD
+  siteDescription: 'Minimal Blog focused on Web Development', // Your site description
+  author: 'David Quick', // Author for schemaORGJSONLD
   siteLogo: 'src/bear.svg', // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional

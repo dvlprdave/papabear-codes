@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import { Article, Button, Layout, SectionTitle, Wrapper } from '../components';
-import Category from './../templates/category';
 
 
 const Content = styled.div`
@@ -53,7 +52,7 @@ const IndexPage = ({
           <h1>Hi ✌️</h1>
           <p>
             I&apos;m Dave, a developer from NY. I write web development articles for all. This is my journal to you. Enjoy!
-        </p>
+          </p>
           <Link to="/about">
             <Button big>About</Button>
           </Link>
